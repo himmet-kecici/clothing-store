@@ -4,13 +4,13 @@ import 'firebase/auth';
 
 
 const config = {
-    apiKey: "AIzaSyA870GollR9MnFtxp9tcPrhAIkqO2cAjsc",
+    apiKey: process.env.REACT_APP_FB_API_KEY,
     authDomain: "clothing-store-db-8f418.firebaseapp.com",
     projectId: "clothing-store-db-8f418",
     storageBucket: "clothing-store-db-8f418.appspot.com",
-    messagingSenderId: "211713861467",
-    appId: "1:211713861467:web:50f0089d2b6d978582dc7e",
-    measurementId: "G-81B3GVSMP4"
+    messagingSenderId: process.env.REACT_APP_FB_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FB_APP_ID,
+    measurementId: process.env.REACT_APP_FB_MEASUREMENT_ID
 };
 firebase.initializeApp(config);
 
