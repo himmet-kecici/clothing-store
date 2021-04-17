@@ -8,7 +8,6 @@ import { selectCartHidden } from '../../redux/cart/cart.selectors.js'
 import { selectCurrentUser } from '../../redux/user/user.selectors'
 import { signOutStart } from '../../redux/user/user.actions'
 import { ReactComponent as Logo } from '../../assets/crown.svg'
-import { auth } from '../../firebase/firebase.utils'
 import {
     HeaderContainer,
     LogoContainer,
